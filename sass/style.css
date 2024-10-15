@@ -1,0 +1,29 @@
+/* GLOBAL */
+body {
+    background-color: antiquewhite;
+}
+
+ul li {
+    display: inline-block;
+}
+
+/* NAVIGATION */
+.navigation {
+    background-color: #786fa6;
+}
+/* HEADER */
+.welcome {
+    background-color: #f5cd79;
+}
+/* SERVICES */
+.services-section {
+    background-color: #f19066;
+}
+/* PORTFOLIO */
+.portfolio {
+    background-color: #f8a5c2;
+}
+/* FOOTER */
+.footer {
+    background-color: #63cdda;
+}
