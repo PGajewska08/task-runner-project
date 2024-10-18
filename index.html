@@ -20,10 +20,10 @@
                 <div class=" container">
                     <div class="row">
                         <div class="logo col-6">
-                            Golden
+                            <a href="#" class="logo">Golden</a>
                         </div>
                         <div class="menu col-6">
-                            <ul>
+                            <ul class="menu">
                                 <li><a href="#">home</a></li>
                                 <li><a href="#services">services</a></li>
                                 <li><a href="#portfolio">portfolio</a></li>
@@ -37,127 +37,137 @@
             <!--HEADER-->
             <header class="welcome">
                 <div class="container">
-                    <div class="row welcome-inner">
-                        <div class="col welcome-text">
-                            <h2>Welcome To Our Studio!</h2>
-                            <h1>It's nice to meet you</h1>
-                            <a class="button" href="#">tell me more</a>
-                        </div>
+                    <div class="welcome-inner">
+                        <h2 class="col welcome-text">Welcome To Our Studio!</h2>
+                        <h1 class="col welcome-text">It's nice to meet you</h1>
+                        <a class="welcome-button" href="#">tell me more</a>
                     </div>
                 </div>
             </header>
         </div>
-        <!--SECTION: SERVICES-->
-        <section class="services-section" id="services">
-            <div class="container">
-                <div class="row">
+        <main>
+            <!--SECTION: SERVICES-->
+            <section class="services-section" id="services">
+                <div class="container">
                     <div class="section-title col">
-                        <h2>services</h2>
-                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                        <h2 class="section-title">services</h2>
+                        <h3 class="section-title">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                    <div class="row services-cards">
+                        <div class="service col-4">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <h4>E-commerce</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor sit amet dolor sit amet.
+                            </p>
+                        </div>
+                        <div class="service col-4">
+                            <i class="fa-solid fa-laptop"></i>
+                            <h4>Responsive Web</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor sit amet dolor sit amet.
+                            </p>
+                        </div>
+                        <div class="service col-4">
+                            <i class="fa-solid fa-lock"></i>
+                            <h4>Web Security</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor sit amet dolor sit amet.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="row services-cards">
-                    <div class="service col-4">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                        <h4>E-commerce</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio eligendi magni nesciunt neque sint autem ea nihil architecto, at reiciendis id rerum repellendus voluptates vitae ipsum dolore consequuntur eaque.
-                        </p>
+            </section>
+            <!--SECTION: PORTFOLIO-->
+            <section class="portfolio" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title col">
+                            <h2 class="section-title">our portfolio</h2>
+                            <h3 class="section-title">Lorem ipsum dolor sit amet consectetur.</h3>
+                        </div>
                     </div>
-                    <div class="service col-4">
-                        <i class="fa-solid fa-laptop"></i>
-                        <h4>Responsive Web</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio eligendi magni nesciunt neque sint autem ea nihil architecto, at reiciendis id rerum repellendus voluptates vitae ipsum dolore consequuntur eaque.
-                        </p>
-                    </div>
-                    <div class="service col-4">
-                        <i class="fa-solid fa-lock"></i>
-                        <h4>Web Security</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio eligendi magni nesciunt neque sint autem ea nihil architecto, at reiciendis id rerum repellendus voluptates vitae ipsum dolore consequuntur eaque.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--SECTION: PORTFOLIO-->
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title col">
-                        <h2>our portfolio</h2>
-                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    </div>
-                </div>
                     <div class="row portfolio-gallery">
                         <div class="gallery-card col-4">
-                            <div class="portfolio-image">
-                                <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
-                            </div>
-                            <div class="portfolio-item-description">
-                                <p class="portfolio-item-title">Ebony &amp; Ivory</p>
-                                <p class="portfolio-item-subtitle">Branding</p>
-                            </div>
+                            <figure class="portfolio-figure">
+                                <div class="portfolio-image">
+                                    <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
+                                </div>
+                                <figcaption class="portfolio-item-description">
+                                    <h4 class="portfolio-item-title">Ebony &amp; Ivory</h4>
+                                    <span class="portfolio-item-subtitle">Branding</span>
+                                </figcaption>
+                            </figure>
                         </div>
                         <div class="gallery-card col-4">
-                            <div class="portfolio-image">
-                                <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
-                            </div>
-                            <div class="portfolio-item-description">
-                                <p class="portfolio-item-title">Smart Stationary</p>
-                                <p class="portfolio-item-subtitle">Print design</p>
-                            </div>
+                            <figure class="portfolio-figure">
+                                <div class="portfolio-image">
+                                    <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
+                                </div>
+                                <figcaption class="portfolio-item-description">
+                                    <h4 class="portfolio-item-title">Smart Stationary</h4>
+                                    <span class="portfolio-item-subtitle">Print design</span>
+                                </figcaption>
+                             </figure>
                         </div>
                         <div class="gallery-card col-4">
-                            <div class="portfolio-image">
+                            <figure class="portfolio-figure">
+                                <div class="portfolio-image">
                                 <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
-                            </div>
-                            <div class="portfolio-item-description">
-                                <p class="portfolio-item-title">Clever Poster</p>
-                                <p class="portfolio-item-subtitle">Print Design</p>
-                            </div>
+                                </div>
+                                <figcaption class="portfolio-item-description">
+                                    <h4 class="portfolio-item-title">Clever Poster</h4>
+                                    <span class="portfolio-item-subtitle">Print Design</span>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row portfolio-gallery">
                         <div class="gallery-card col-4">
-                            <div class="portfolio-image">
-                                <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
-                            </div>
-                            <div class="portfolio-item-description">
-                                <p class="portfolio-item-title">Vinyl Record</p>
-                                <p class="portfolio-item-subtitle">Product Mock-Up</p>
-                            </div>
+                            <figure class="portfolio-figure">
+                                <div class="portfolio-image">
+                                    <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
+                                </div>
+                                <figcaption class="portfolio-item-description">
+                                    <h4 class="portfolio-item-title">Vinyl Record</h4>
+                                    <span class="portfolio-item-subtitle">Product Mock-Up</span>
+                                </figcaption>
+                            </figure>
                         </div>
                         <div class="gallery-card col-4">
-                            <div class="portfolio-image">
-                                <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
-                            </div>
-                            <div class="portfolio-item-description">
-                                <p class="portfolio-item-title">Treehouse Template</p>
-                                <p class="portfolio-item-subtitle">Web Design</p>
-                            </div>
+                            <figure class="portfolio-figure">
+                                <div class="portfolio-image">
+                                    <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
+                                </div>
+                                <figcaption class="portfolio-item-description">
+                                    <h4 class="portfolio-item-title">Treehouse Template</h4>
+                                    <span class="portfolio-item-subtitle">Web Design</span>
+                                </figcaption>
+                            </figure>
                         </div>
                         <div class="gallery-card col-4">
-                            <div class="portfolio-image">
-                                <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
-                            </div>
-                            <div class="portfolio-item-description">
-                            <p class="portfolio-item-title">Burned Logo</p>
-                            <p class="portfolio-item-subtitle">Branding</p>
+                            <figure class="portfolio-figure">
+                                <div class="portfolio-image">
+                                    <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFKEx_cbCNhGgiTZcu7dZfP0QgZeP2tUGdUrSwtc_tm67TKpvrsTO_SUkLklFtLPmLEBXxxNMsmUqcUEczrBU" alt="vvv">
+                                </div>
+                                <figcaption class="portfolio-item-description">
+                                    <h4 class="portfolio-item-title">Burned Logo</h4>
+                                    <span class="portfolio-item-subtitle">Branding</span>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
         <!--FOOTER-->
-        <section class="footer" id="footer">
+        <footer class="footer" id="footer">
             <div class="container footer-container">
                 <div class="row">
-                    <div class="col-6 copyright">
-                        <p>&copy;Copyright 2014 FreebiesXpress.com</p>
+                    <div class="col-4 copyright">
+                        <span class="copyright">&copy;Copyright 2014 FreebiesXpress.com</span>
                     </div>
-                    <div class="col-6 socials">
+                    <div class="col-8 socials">
                         <ul>
                             <li><a href="#"> <i class="fa-brands fa-twitter"></i>twitter</a></li>
                             <li><a href="#"> <i class="fa-brands fa-facebook"></i>facebook</a></li>
