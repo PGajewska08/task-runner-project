@@ -1,14 +1,18 @@
 /* GLOBAL */
+
 /*colors*/
 $color-lighter: #ffffff;
 $color-light: #f1f2f6;
 $font-color-1: #808e9b;
+
 /*fonts*/
 $font-f1: "Leckerli One", cursive;
+$font-f2: "Kurale", serif;
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     background-color: antiquewhite;
@@ -19,6 +23,17 @@ a {
     text-decoration: none;
 }
 
+.button {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 35px;
+}
+/* SECTION TITLE */
 .section-title {
     display: flex;
     flex-direction: column;
@@ -26,6 +41,7 @@ a {
     align-items: center;
     padding: 50px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 h2.section-title {
@@ -48,12 +64,11 @@ h3.section-title {
 .header-container {
     background-image: url(https://i.postimg.cc/wMyY53fX/pexels-nogman-796167ppp40.jpg);
     height: 50vh;
-    position: relative;
     background-position: center center;
     background-size: cover;
     min-height: 600px;
-
 }
+
 .navigation {
     a {
         color: $color-lighter;
@@ -85,7 +100,6 @@ ul.menu li {
 }
 
 /* HEADER */
-
 .welcome-text {
     display: flex;
     flex-direction: column;
@@ -97,10 +111,7 @@ ul.menu li {
 
 .welcome-inner {
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 100px;
 }
 
 h1.welcome-text {
@@ -108,29 +119,24 @@ h1.welcome-text {
     font-size: 60px;
     padding: 0;
     margin: 20px;
+    text-align: center;
 }
 
 h2.welcome-text {
     text-transform: uppercase;
     font-size: 35px;
     text-transform: none;
-    font-family: "Kurale", serif;
+    font-family: $font-f2;
     font-style: italic;
     padding: 0;
     margin: 20px;
 }
 
 .welcome-button {
-    display: inline-block;
     background-color: #ffd900;
-    color: $color-lighter;
-    text-decoration: none;
-    padding: 15px 35px;
-    border-radius: 2px;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold;
+    color: $color-lighter
 }
+
 /* SERVICES */
 .services-section {
     background-color: $color-lighter;
@@ -142,6 +148,7 @@ h2.welcome-text {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 .service i {
@@ -159,10 +166,10 @@ h2.welcome-text {
     background-color: $color-light;
     padding: 80px;
 }
+
+
 .gallery-card {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 50%;
+    flex: 0 0 100%;
     min-height: 300px;
     min-width: 96px;
     position: relative;
@@ -193,6 +200,7 @@ h4.portfolio-item-title {
     font-style: italic;
     font-size: 14px;
 }
+
 .portfolio-image {
     margin: 0px;
     padding: 0px;
@@ -208,6 +216,7 @@ h4.portfolio-item-title {
     padding: 0px;
     margin: 0;
 }
+
 /* FOOTER */
 .footer{
     background-color: $color-lighter;
@@ -223,27 +232,84 @@ span.copyright {
     font-size: 14px;
 }
 
-.socials {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.footer i {
-    font-size: 20px;
-    color: $color-light;
-    background-color: black;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-}
 .footer ul li {
     font-size: 0;
     display: inline-block;
     list-style-type: none;
 }
 
-.footer-container {
-    padding: 20px;
+.socials {
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 0 100px;
+    i {
+        font-size: 20px;
+        color: $color-light;
+        background-color: black;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    ul {
+        padding-inline-start: 0px;
+    }
 }
+
+.copyright {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    span {
+        font-size: 14px;
+    }
+}
+
+/* MEDIA QUERY */
+@media (max-width: 767px) {
+    .copyright span {
+        font-size: 20px; 
+    }
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .socials {
+        padding: 0;
+        i{
+            font-size: 30px;
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+        }
+    }
+    
+    h4.portfolio-item-title {
+        font-size: 25px;
+    }
+    
+    .portfolio-item-subtitle {
+        font-size: 20px;
+    }
+
+    ul.menu li {
+        font-size: 20px;
+    }
+
+    h1.welcome-text {
+        font-size: 40px;
+    }
+    
+    h2.welcome-text {
+        font-size: 30px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+}
+
